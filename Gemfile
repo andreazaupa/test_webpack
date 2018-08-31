@@ -42,6 +42,13 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem "capistrano"
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
+  gem 'capistrano3-puma', git: "https://github.com/seuros/capistrano-puma.git"
+  gem "capistrano-db-tasks", "0.4", require: false
+  # gem 'capistrano-bower'
+  gem 'capistrano-npm'
+  gem 'capistrano-yarn'
 end
 
 group :development do
